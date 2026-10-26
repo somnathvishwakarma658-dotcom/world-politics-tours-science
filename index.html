@@ -1,12 +1,244 @@
-<!-- ================= HERO SECTION BUTTONS ================= -->
-<div class="flex flex-wrap items-center gap-4 pt-4 justify-center md:justify-start">
-    <a href="politics.html" class="bg-gold hover:bg-amber-600 text-slate-900 font-bold px-7 py-3.5 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 inline-flex items-center">
-        <i class="fa-solid fa-newspaper mr-2"></i> राजनीति
-    </a>
-    <a href="tours.html" class="bg-secondary hover:bg-teal-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition-all inline-flex items-center">
-        <i class="fa-solid fa-compass mr-2"></i> पर्यटन
-    </a>
-    <a href="ai-article.html" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-7 py-3.5 rounded-xl backdrop-blur-md transition-all inline-flex items-center">
-        <i class="fa-solid fa-atom mr-2"></i> विज्ञान व तकनीक
-    </a>
-</div>
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Politics & Tour Science - राष्ट्र एवं ज्ञान</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://worldpoliticstourscience.vercel.app/Gemini_Generated_Image_ftnbdffnbdfftnb.png">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Mukta & Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D253F',
+                        secondary: '#008080',
+                        gold: '#C59B27',
+                        saffron: '#f97316', 
+                        darkBg: '#081422',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Mukta', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', 'Mukta', sans-serif;
+            background-color: #0D253F;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(13, 37, 63, 0.95) 0%, rgba(8, 20, 34, 0.9) 100%);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 glass shadow-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <!-- EMBEDDED SVG BRAND LOGO -->
+                <a href="index.html" class="flex items-center cursor-pointer py-2">
+                    <div class="flex items-center space-x-3">
+                        <svg class="h-16 w-auto drop-shadow-sm" viewBox="0 0 700 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="bgRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0b2341"/>
+                                    <stop offset="50%" stop-color="#183b68"/>
+                                    <stop offset="100%" stop-color="#081528"/>
+                                </linearGradient>
+                                <linearGradient id="polGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#1e4b8a"/>
+                                    <stop offset="100%" stop-color="#0b2340"/>
+                                </linearGradient>
+                                <linearGradient id="tourGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#8ce1dc"/>
+                                    <stop offset="40%" stop-color="#219c90"/>
+                                    <stop offset="100%" stop-color="#e38c35"/>
+                                </linearGradient>
+                                <linearGradient id="sciGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#182d54"/>
+                                    <stop offset="50%" stop-color="#3b2d70"/>
+                                    <stop offset="100%" stop-color="#0a1226"/>
+                                </linearGradient>
+                                <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#f2d06b"/>
+                                    <stop offset="50%" stop-color="#c59b27"/>
+                                    <stop offset="100%" stop-color="#8a6710"/>
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Outer Compass Ring -->
+                            <circle cx="350" cy="145" r="132" fill="url(#bgRingGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+                            <circle cx="350" cy="145" r="126" fill="none" stroke="#2a4a75" stroke-width="2"/>
+                            <circle cx="350" cy="145" r="122" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 3"/>
+
+                            <!-- Compass Points Arrows -->
+                            <polygon points="350,7 344,18 356,18" fill="url(#goldGrad)"/>
+                            <polygon points="350,283 344,272 356,272" fill="url(#goldGrad)"/>
+                            <polygon points="212,145 223,139 223,151" fill="url(#goldGrad)"/>
+                            <polygon points="488,145 477,139 477,151" fill="url(#goldGrad)"/>
+
+                            <!-- TOP LEFT: POLITICS CIRCLE -->
+                            <g transform="translate(0, 0)">
+                                <circle cx="302" cy="110" r="48" fill="url(#polGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                                <circle cx="302" cy="110" r="44" fill="none" stroke="#2d60a0" stroke-width="1" stroke-dasharray="3 3"/>
+                                <ellipse cx="302" cy="110" rx="44" ry="18" fill="none" stroke="#326bb2" stroke-width="1"/>
+                                <line x1="302" y1="66" x2="302" y2="154" stroke="#326bb2" stroke-width="1"/>
+                                <rect x="274" y="98" width="6" height="24" rx="1" fill="#e2e8f0"/>
+                                <rect x="324" y="98" width="6" height="24" rx="1" fill="#e2e8f0"/>
+                                <path d="M270 98 L280 98 M320 98 L330 98 M270 122 L280 122 M320 122 L330 122" stroke="#cbd5e1" stroke-width="2"/>
+                                <path d="M294 106 C298 96 308 96 312 102 C316 98 322 102 318 110 C310 114 300 112 294 106 Z" fill="#ffffff"/>
+                                <path d="M300 102 C296 95 288 98 292 104 Z" fill="#e2e8f0"/>
+                            </g>
+
+                            <!-- TOP RIGHT: TOUR CIRCLE -->
+                            <g transform="translate(0, 0)">
+                                <circle cx="398" cy="110" r="48" fill="url(#tourGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                                <circle cx="382" cy="85" r="10" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+                                <path d="M382 72 L384 83 L395 85 L384 87 L382 98 L380 87 L369 85 L380 83 Z" fill="url(#goldGrad)"/>
+                                <path d="M418 88 L428 82 L426 88 L432 91 L430 93 L425 91 L422 96 L420 96 L421 91 L416 89 Z" fill="#ffffff"/>
+                                <polygon points="380,140 402,108 422,140" fill="#334155"/>
+                                <polygon points="400,108 402,108 407,116 401,114 396,118" fill="#ffffff"/>
+                                <polygon points="408,140 422,118 438,140" fill="#475569"/>
+                                <circle cx="370" cy="122" r="2.5" fill="#0f172a"/>
+                                <path d="M370 125 L372 135 M368 128 L374 128 M372 135 L368 142 M372 135 L375 142" stroke="#0f172a" stroke-width="1.5"/>
+                                <rect x="366" y="125" width="3" height="6" rx="1" fill="#be123c"/>
+                                <path d="M352 144 Q365 138 375 144 T398 140" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                            </g>
+
+                            <!-- BOTTOM: SCIENCE CIRCLE -->
+                            <g transform="translate(0, 0)">
+                                <circle cx="350" cy="195" r="48" fill="url(#sciGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+                                <ellipse cx="325" cy="182" rx="14" ry="5" fill="none" stroke="#38bdf8" stroke-width="1" transform="rotate(-30 325 182)"/>
+                                <ellipse cx="325" cy="182" rx="14" ry="5" fill="none" stroke="#38bdf8" stroke-width="1" transform="rotate(30 325 182)"/>
+                                <circle cx="325" cy="182" r="2.5" fill="#f0abfc"/>
+                                <g transform="translate(350, 195) rotate(-15)">
+                                    <path d="M-6 12 C-6 12 -8 -5 0 -18 C8 -5 6 12 6 12 Z" fill="#ffffff"/>
+                                    <path d="M0 -18 C4 -8 4 0 0 12 Z" fill="#e2e8f0"/>
+                                    <circle cx="0" cy="-4" r="3" fill="#0284c7"/>
+                                    <path d="M-6 5 L-12 14 L-6 12 Z M6 5 L12 14 L6 12 Z" fill="#ef4444"/>
+                                    <path d="M-4 12 Q0 22 4 12 Q0 18 -4 12 Z" fill="url(#goldGrad)"/>
+                                </g>
+                                <path d="M375 175 Q380 185 375 195 T375 215" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+                                <path d="M383 175 Q378 185 383 195 T383 215" fill="none" stroke="#ec4899" stroke-width="1.5"/>
+                                <line x1="376" y1="180" x2="382" y2="180" stroke="#ffffff" stroke-width="1"/>
+                                <line x1="378" y1="190" x2="380" y2="190" stroke="#ffffff" stroke-width="1"/>
+                                <line x1="376" y1="200" x2="382" y2="200" stroke="#ffffff" stroke-width="1"/>
+                            </g>
+
+                            <!-- Center Star -->
+                            <polygon points="350,136 353,142 360,143 355,148 356,155 350,151 344,155 345,148 340,143 347,142" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="0.8"/>
+
+                            <!-- TYPOGRAPHY -->
+                            <text x="350" y="300" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="34" font-weight="900" fill="#0D253F" letter-spacing="3">WORLD POLITICS</text>
+                            <g transform="translate(0, 0)">
+                                <polygon points="190,328 196,333 190,338 184,333" fill="url(#goldGrad)"/>
+                                <line x1="160" y1="333" x2="180" y2="333" stroke="url(#goldGrad)" stroke-width="2"/>
+                                <text x="350" y="340" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="30" font-weight="800" fill="#C59B27" letter-spacing="4">TOUR SCIENCE</text>
+                                <polygon points="510,328 516,333 510,338 504,333" fill="url(#goldGrad)"/>
+                                <line x1="520" y1="333" x2="540" y2="333" stroke="url(#goldGrad)" stroke-width="2"/>
+                            </g>
+                            <text x="350" y="368" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#475569" letter-spacing="1.5">GLOBAL PERSPECTIVES • GEOGRAPHICAL JOURNEYS • SCIENTIFIC DISCOVERY</text>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-gold">Home</a>
+                    <a href="politics.html" class="font-bold text-slate-700 hover:text-primary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Politics</a>
+                    <a href="tours.html" class="font-bold text-slate-700 hover:text-secondary transition-colors py-2 border-b-2 border-transparent hover:border-gold">Tours</a>
+                    <a href="ai-article.html" class="font-bold text-slate-700 hover:text-indigo-600 transition-colors py-2 border-b-2 border-transparent hover:border-gold">Science</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" onclick="toggleMobileMenu()" class="text-slate-700 hover:text-primary focus:outline-none p-2 rounded-lg">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Home</a>
+            <a href="politics.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Politics (राजनीति)</a>
+            <a href="tours.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Tours (पर्यटन)</a>
+            <a href="ai-article.html" class="block font-bold text-slate-700 hover:bg-slate-50 px-3 py-2 rounded-md">Science (विज्ञान)</a>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION (MAIN SCREEN) ================= -->
+    <section id="home" class="relative bg-primary text-white flex-grow flex items-center overflow-hidden py-24">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80" alt="World Science Travel Politics" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-10 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-gold/30 text-gold text-sm font-semibold">
+                        <i class="fa-solid fa-star"></i>
+                        <span>राजनीति, यात्राएं और विज्ञान की दुनिया</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                        वैश्विक कूटनीति, पर्यटन और <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-gold to-teal-300">विज्ञान के अद्भुत रहस्यों का सफर</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-200 max-w-2xl font-light leading-relaxed">
+                        जानिए देश-विदेश की राजनीति, घूमने की सबसे बेहतरीन जगहें और अंतरिक्ष तथा तकनीक से जुड़ी ताज़ा वैज्ञानिक खोजें।
+                    </p>
+                    
+                    <!-- 3 BUTTONS LINKED TO SEPARATE PAGES -->
+                    <div class="flex flex-wrap items-center gap-4 pt-6 justify-center md:justify-start">
+                        <a href="politics.html" class="bg-gold hover:bg-amber-600 text-slate-900 font-bold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1 inline-flex items-center text-lg">
+                            <i class="fa-solid fa-newspaper mr-3"></i> राजनीति
+                        </a>
+                        <a href="tours.html" class="bg-secondary hover:bg-teal-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-1 inline-flex items-center text-lg">
+                            <i class="fa-solid fa-compass mr-3"></i> पर्यटन
+                        </a>
+                        <a href="ai-article.html" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-md transition-all transform hover:-translate-y-1 inline-flex items-center text-lg">
+                            <i class="fa-solid fa-atom mr-3"></i> विज्ञान व तकनीक
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center border-t border-slate-800 text-sm">
+        <p>© 2026 World Politics, Tours & Science Hub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript Mobile Menu -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+
